@@ -1,0 +1,111 @@
+body{
+	background: darkgreen;
+	 margin-top: 20px;
+	 margin-left: 50px;
+	 margin-right: 500px;
+	 margin-bottom: 20pxs;
+}
+.projects-main-container{
+	display: flex;
+	justify-content: space-between;
+}
+.project-container{
+	border: solid 1px;
+	padding: 20px;
+	background-color: #f0f0f0; /* light gray background */
+	border-radius: 12px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.project-container:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+.project-container h4 {
+	font-family: 'Roboto', sans-serif;
+	color: #00e5ff;
+	letter-spacing: 1px;
+}
+@keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+.project-container {
+	animation: fadeIn 1.5s ease-in-out;
+}
+.navbar{
+	display: flex;
+	justify-content: space-between;
+	align-items: center; /* Vertically center */
+	background-color: #222; /* Darker background for a modern look */
+	padding: 15px 30px; /* Adjust padding for spacing */
+	border-radius: 10px; /* Rounded corners */
+	box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
+	transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+/* Logo Styling */
+.navbar .logo {
+	font-family: 'Roboto', sans-serif;
+	font-size: 28px;
+	font-weight: 700;
+	color: #00e5ff; /* Bright neon blue for logo */
+	letter-spacing: 1px;
+	transition: color 0.3s ease;
+}
+
+.navbar .logo:hover {
+	color: #ff4081; /* Logo color change on hover */
+}
+
+/* Menu Styling */
+.navbar .menu {
+	display: flex;
+	gap: 25px; /* Space between items */
+}
+
+.navbar .menu a {
+	color: #d1d1d1; /* Light text for readability */
+	text-decoration: none; /* Remove underline */
+	font-size: 18px;
+	font-weight: 500;
+	transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover Effects */
+.navbar .menu a:hover {
+	color: #00e5ff; /* Blue glow effect on hover */
+	transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* Active Link Styling */
+.navbar .menu a.active {
+	color: #ff4081; /* Active link with pink accent */
+	font-weight: bold; /* Bold active link */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+	.navbar {
+		flex-direction: column; /* Stack items vertically on mobile */
+		align-items: flex-start; /* Align items to the left */
+	}
+
+	.navbar .menu {
+		flex-direction: column; /* Vertical menu items */
+		width: 100%; /* Full width for the menu */
+		gap: 15px; /* Smaller gap between items */
+	}
+
+	.navbar .menu a {
+		font-size: 20px; /* Slightly larger text for mobile */
+	}
+}
+
+/* Hover & Scroll Effect */
+.navbar:hover {
+	background-color: #333; /* Change background on hover */
+}
+
+}
